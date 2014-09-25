@@ -112,9 +112,10 @@ app.controller("mainCtrl",
 
         $scope.appready = true;
 
-        $scope.firstMethod = function () {
+        $scope.firstMessage = mainService.firstMethod("WELCOME");
 
-            $scope.firstMessage = mainService.firstMethod("WELCOME");
+        $scope.myMethod = function () {
+            
         };
 
 
