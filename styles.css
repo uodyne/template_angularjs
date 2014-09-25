@@ -1,0 +1,200 @@
+.header-app {
+
+    background-color: #1e2525;
+
+    color: #666;
+
+    margin: 0;
+
+    padding-top: 10px;
+
+}
+
+.header-app .logo {
+
+    font-size: .5em;
+
+}
+
+.loading-splash h6 {
+
+    font-size: 8pt !important;
+
+}
+.spinner-inline {
+
+    width: 280px;
+
+    height: 280px;
+
+    margin: 0 auto;
+
+    background-color: #426BD6;
+
+    border-radius: 100%;
+
+    -webkit-animation: scaleout 1.0s infinite ease-in-out;
+
+    animation: scaleout 1.0s infinite ease-in-out;
+
+}
+
+@-webkit-keyframes scaleout {
+
+    0% {
+
+        -webkit-transform: scale(0.0)
+
+    }
+
+    100% {
+
+        -webkit-transform: scale(1.0);
+
+        opacity: 0;
+
+    }
+
+}
+
+@keyframes scaleout {
+
+    0% {
+
+        transform: scale(0.0);
+
+        -webkit-transform: scale(0.0);
+
+    }
+
+    100% {
+
+        transform: scale(1.0);
+
+        -webkit-transform: scale(1.0);
+
+        opacity: 0;
+
+    }
+
+}
+
+@-webkit-keyframes outsplash {
+
+    0% {
+
+        -webkit-transform: scale(1.0);
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        -webkit-transform: scale(3.0);
+
+        opacity: 0;
+
+    }
+
+}
+
+@keyframes outsplash {
+
+    0% {
+
+        transform: scale(1.0);
+
+        -webkit-transform: scale(1.0);
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform: scale(3.0);
+
+        -webkit-transform: scale(3.0);
+
+        opacity: 0;
+
+    }
+
+}
+
+@-webkit-keyframes scaleapp {
+
+    0% {
+
+        -webkit-transform: scale(0.0);
+
+        opacity: 0;
+
+    }
+
+    100% {
+
+        -webkit-transform: scale(1.0);
+
+        opacity: 1;
+
+    }
+
+}
+
+@keyframes scaleapp {
+
+    0% {
+
+        transform: scale(0.0);
+
+        -webkit-transform: scale(0.0);
+
+        opacity: 0;
+
+    }
+
+    100% {
+
+        transform: scale(1.0);
+
+        -webkit-transform: scale(1.0);
+
+        opacity: 1;
+
+    }
+
+}
+
+.appready {
+
+    -webkit-animation: scaleapp 0.5s ease-in-out;
+
+    animation: scaleapp 0.5s ease-in-out;
+
+}
+
+.loading-splash {
+
+    z-index: 999;
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+}
+
+.uo-splash {
+
+    -webkit-animation: outsplash 1s ease-in-out;
+
+    animation: outsplash 1s ease-in-out;
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-cloak>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>WELCOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="//darkant.com/cdn/uodyne-bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+</head>
+
+<body ng-controller="mainCtrl">
+    <div ng-class="(appready ? 'uo-splash' : '')" class="{(appready ? 'uo-splash' : '')} loading-splash well text-center">
+        <div class="spinner-inline"></div>
+        <h6 class="lead"><span class="logo glyphicon glyphicon-record"></span> WELCOME</h6>
+    </div>
+
+    <div id="contentapp" ng-class="(appready ? 'appready' : '')">
+        <h1 class='header-app text-center'><span class="logo glyphicon glyphicon-record"></span> <span class='lead slogan'>WELCOME</span></h1>
+        <div class="content">
+            <div class="row">
+                WELCOME
+            </div>
+        </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.2/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.2/angular-resource.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.2/angular-route.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
